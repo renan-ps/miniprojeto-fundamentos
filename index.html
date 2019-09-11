@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+	.intro-2 {
+		
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (2).jpg")no-repeat center center;
+    background-size: cover;
+   width: 100%;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+.background-inicio img{
+		filter: blur(2);
+		background-repeat: no-repeat;
+
+    width: 1920px;
+    height: 400px;
+    z-index: -1;
+   
+    background-attachment: fixed;
+		
+		
+	
+	}
+  .itens_flutuantes{
+
+    z-index: 1;
+    padding-bottom: 100px;
+  }
+ .contrast,
+.contrast nav,
+.contrast div,
+.contrast li,
+.contrast ol,
+.contrast header,
+.contrast footer,
+.contrast section,
+.contrast main,
+.contrast aside,
+.contrast article {
+    background: black !important;
+    color: white !important;
+}
+.contrast h1,
+.contrast h2,
+.contrast h3,
+.contrast h4,
+.contrast h5,
+.contrast h6,
+.contrast p,
+.contrast label,
+.contrast strong,
+.contrast em,
+.contrast cite,
+.contrast q,
+.contrast i,
+.contrast b,
+.contrast u,
+.contrast span {
+    color: white !important;
+}
+.contrast a{
+    color: yellow !important;
+}
+
+.contrast button,
+.contrast input[type=button],
+.contrast input[type=reset],
+.contrast input[type=submit] {
+    background: black !important;
+    color: yellow !important;
+    border: none !important;
+}
+.contrast img.on-contrast-force-gray {
+    filter: grayscale(100%) contrast(120%);
+}
+
+.contrast img.on-contrast-force-white {
+    filter: brightness(0) invert(1);
+}
+.contrast input[type=text],
+.contrast input[type=password],
+.contrast input[type=url],
+.contrast input[type=search],
+.contrast input[type=email],
+.contrast input[type=tel],
+.contrast input[type=date],
+.contrast input[type=month],
+.contrast input[type=week],
+.contrast input[type=datetime],
+.contrast input[type=datetime-local],
+.contrast textarea,
+.contrast input[type=number] {
+    background: black !important;
+    border: 1px solid white !important;
+    color: white !important;
+}
+.acess{
+  padding-top: 50px;
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+}
+.acess h1{
+
+  padding-top: 300px;
+}
+
+.shadow-pop-tr :hover {
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+          animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+ <nav class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar justify-content-center">
+        <a class="navbar-brand" href="#"><strong><img src="Icone_site.png" width="30" height="30" alt=""></strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav  justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Passeios <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Transporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Transporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Transporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Transporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+				
+
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#modalLRForm">Entre ou Cadastre-se</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="view intro-2" style="">
+        <div class="full-bg-img">
+            <div class="mask rgba-purple-light flex-center">
+                <div class="container text-center white-text wow fadeInUp">
+                    <h1 class="display-1 primary ">CORNout VIAGENS</h1>
+                    <br>
+                    <br>
+                   <div class="pesquisa_lugar">
+
+<div class="input-group container-fluid rounded hoverable" style="max-width: 100%;">
+  <select class="custom-select rounded-top" id="inputGroupSelect04" aria-label="Example select with button addon">
+    <option selected>Onde ?</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+    <option selected>Check-in - Check-out</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+    <option selected>1 Adultos, 0 Sênior,0 Crianças</option>
+    <option value="1">Adulto</option>
+    <option value="2">Senior</option>
+    <option value="3">Criança</option>
+
+  </select>
+  <button  class="input-group-text  btn-primary" id="basic-addon2">Montar Roteiro</span>
+  
+</div>
+</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+<!--Main Navigation-->
+
+<br>
+
+
+
+
+<div class="container-fluid img-fluid">
+<div class="jumbotron card card-image " style="background-image: url(Banner_linguagens.jpg);">
+  <div class="text-white text-center py-5 px-4">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><br><br><br><br><strong></strong></h2>
+      <p class="mx-5 mb-5">
+      </p>
+		
+
+
+      <a class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i>Quiz CORNouT</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<hr>
+<div class="container-fluid ">
+	
+
+<div class="card-deck">
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay zoom hoverable">
+      <img class="card-img-top" src="php_card.png" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">PHP</h4>
+      <!--Text-->
+      <p class="card-text">O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md" data-toggle="modal" data-target="#basicExampleModal1">Ler Mais</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay zoom hoverable">
+      <img class="card-img-top" src="card_java.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Java Script</h4>
+      <!--Text-->
+      <p class="card-text">JavaScript é uma linguagem de programação que permite implementar funcionalidades mais complexas em páginas web. A cada momento uma página web faz mais do que apenas mostrar informações estáticas para você - elas mostram em tempo real conteúdos atualizados, ou mapas interativos, animações gráficas em 2D/3D, vídeos, etc.,  você pode apostar que o Javascript provavelmente está envolvido.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md" data-toggle="modal" data-target="#basicExampleModal2">Ler Mais</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay zoom hoverable">
+      <img class="card-img-top" src="card_html_css.png" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">HTML e CSS</h4>
+      <!--Text-->
+      <p class="card-text">HTML é a linguagem de marcação com a qual você envolve o conteúdo, para instruir os navegadores sobre cabeçalhos, listas, tabelas, etc. CSS é a linguagem de estilos que você usa para estilizar a página, para instruir os navegadores a alterar a cor, a fonte, o layout e muito mais</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md" data-toggle="modal" data-target="#basicExampleModal3">Ler Mais</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+</div>
+<!-- Card deck -->
+</div>
+
+
+
+
+
+
+<!--Main Layout-->
+
+<!---------------------------------------------------------------------------------------------------------------Modais--------------------------------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------------------------Modal de LOGIN E CADASTRO--------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Entrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+              Cadastro</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput10" autofocus="" required="" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput10">Seu E-mail</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput11" required="" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput11">Sua Senha</label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info">Entrar<i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right mt-1">
+                <p>Não Tem  Cadastro? <a data-toggle="tab" href="panel8" role="tab" class="blue-text" >Cadastrar-se</a></p>
+                <p>Esqueceu a <a href="#" class="blue-text">Senha?</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cancelar</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput12">Seu email</label>
+              </div>
+
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput13">Sua Senha</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput14">Confirme a senha</label>
+              </div>
+
+              <div class="text-center form-sm mt-2">
+                <button class="btn btn-info">Entrar <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Já Tem conta ? <a href="#" class="blue-text">Entrar</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+<!---------------------------------------------------------------------------------------------------------------FIM DO MODAL LOGIN E CADASTRO--------------------------------------------------------------------------------------------------------------------------->
+
+
+<!---------------------------------------------------------------------------------------------------------------INICIO MODAL CONTEUDO--------------------------------------------------------------------------------------------------------------------------->
+
+<!---PHP---->
+<div class="modal fade" id="basicExampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PHP</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--- FIM PHP---->
+
+
+<!---  JAVACRIPT---->
+<div class="modal fade" id="basicExampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">JAVACRIPT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--- FIM JAVACRIPT---->
+
+<!---  HTML-CSS---->
+<div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">HTML e CSS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--- FIM HTML-CSS---->
+
+<!---------------------------------------------------------------------------------------------------------------FIM MODAL CONTEUDO--------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------------------------INICIO PORTIFOLIO E PROJETOS--------------------------------------------------------------------------------------------------------------------------->
+<div class="container-fluid">
+
+<section class="text-center my-5">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold text-center my-5">Outros Projetos</h2>
+  <!-- Section description -->
+  <p class="grey-text text-center w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-12 mb-4">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h6 class="purple-text">
+              <i class="fas fa-plane"></i>
+              <strong> Travel</strong>
+            </h6>
+            <h3 class="py-3 font-weight-bold">
+              <strong>This is card title</strong>
+            </h3>
+            <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat,
+              laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto
+              nulla ipsum dignissimos. Odit sed qui, dolorum!
+            </p>
+            <a class="btn btn-secondary btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6 mb-md-0 mb-4">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h6 class="pink-text">
+              <i class="fas fa-chart-pie"></i>
+              <strong> Marketing</strong>
+            </h6>
+            <h3 class="py-3 font-weight-bold">
+              <strong>This is card title</strong>
+            </h3>
+            <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat,
+              laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto
+              nulla ipsum dignissimos. Odit sed qui, dolorum!
+            </p>
+            <a class="btn btn-pink btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20%2847%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h6 class="green-text">
+              <i class="fas fa-eye"></i>
+              <strong> Entertainment</strong>
+            </h6>
+            <h3 class="py-3 font-weight-bold">
+              <strong>This is card title</strong>
+            </h3>
+            <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat,
+              laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto
+              nulla ipsum dignissimos. Odit sed qui, dolorum!
+            </p>
+            <a class="btn btn-success btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Projects section v.4 -->
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------FIM PORTIFOLIO E PROJETOS--------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------------------------INICIO DO FOOTER (RODA-PÉ)--------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Sobre Nós</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Pacotes</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Viagens</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Trabalhe conosco</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Contato</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <hr class="rgba-white-light" style="margin: 0 15%;">
+
+    <!-- Grid row-->
+    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+      <!-- Grid column -->
+      <div class="col-md-8 col-12 mt-5">
+        <p style="line-height: 1.7rem">Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. Interagi no mé, cursus quis, vehicula ac nisi. Delegadis gente finis, bibendum egestas augue arcu ut est. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+    <!-- Grid row-->
+    <div class="row pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text"> </i>
+          </a>
+
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="#"> CORNOout.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!---------------------------------------------------------------------------------------------------------------FIM DO FOOTER (RODA-PÉ)--------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+</body>
+
+
+
+<!---------------------------------------------------------------------------------------------------------------SCRIPT'S DE ACESSIBILIDADE--------------------------------------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+  (function () {
+    var Contrast = {
+        storage: 'contrastState',
+        cssClass: 'contrast',
+        currentState: null,
+        check: checkContrast,
+        getState: getContrastState,
+        setState: setContrastState,
+        toogle: toogleContrast,
+        updateView: updateViewContrast
+    };
+
+    window.toggleContrast = function () { Contrast.toogle(); };
+
+    Contrast.check();
+
+    function checkContrast() {
+        this.updateView();
+    }
+
+    function getContrastState() {
+        return localStorage.getItem(this.storage) === 'true';
+    }
+
+    function setContrastState(state) {
+        localStorage.setItem(this.storage, '' + state);
+        this.currentState = state;
+        this.updateView();
+    }
+
+    function updateViewContrast() {
+        var body = document.body;
+
+        if (this.currentState === null)
+            this.currentState = this.getState();
+
+        if (this.currentState)
+            body.classList.add(this.cssClass);
+        else
+            body.classList.remove(this.cssClass);
+    }
+
+    function toogleContrast() {
+        this.setState(!this.currentState);
+    }
+})();
+
+function fonte(e){
+  var elemento = $(".acessibilidade");
+  var fonte = elemento.css('font-size');
+  if (e == 'a') {
+    elemento.css("fontSize", parseInt(fonte) + 1);
+  } else if('d'){
+    elemento.css("fontSize", parseInt(fonte) - 1);
+  }
+}
+
+
+</script>
+
+
+
+<!---------------------------------------------------------------------------------------------------------------FIM DOS SCRIPT'S DE ACESSIBILIDADE--------------------------------------------------------------------------------------------------------------------------->
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+</html>
