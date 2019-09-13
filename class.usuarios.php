@@ -20,16 +20,65 @@
 			}
 		}
 
-
+		//Verifica se o usuário está cadastro
 		public function setVerificarCadastro($pdo, $email){
-		
-		$stmt = $pdo->prepare('SELECT * FROM usuarios WHERE email = ?');
+		$stmt = $pdo->prepare('SELECT email FROM usuarios WHERE email = ?');
 		$stmt->bindParam(1, $email, PDO::PARAM_STR);
 
 		$stmt->execute();
 
-		return $stmt->rowCount();
-	}
+		$count = $stmt->rowCount();
+		return $count;
+		}
+
+		//Faz login
+		public function setLogin($pdo, $email, $senha){
+			$stmt = $pdo->prepare('SELECT * from usuarios WHERE email = ? and senha = ?');
+			$stmt -> bindParam(1, $email, PDO::PARAM_STR);
+			$stmt -> bindParam(2, $senha, PDO::PARAM_STR);
+			$stmt -> execute();
+
+			if($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+				$this->setidUsuario($row['idUsuario']);
+				$this->setNome($row['nome']);
+				$this->setEmail($row['email']);
+				$this->setLogado(true);
+			}
+			else{
+				return "erro";
+			}
+		}
+
+		public function setidUsuario($idUsuario){
+			$this->idUsuario = $idUsuario;
+		}
+		public function getidUsuario(){
+			return $this->idUsuario;
+		}
+
+		public function setNome($nome){
+			$this->nome = $nome;
+		}
+		public function getNome(){
+			return $this->nome;
+		}
+
+		public function setEmail($email){
+			$this->email = $email;
+		}
+		public function getEmail(){
+			return $this->email;
+		}
+
+		public function setLogado($log){
+			$this->logado = $log;
+		}
+		public function getLogado(){
+			return $this->logado;
+		}
+
+
+
 
 	}
 

@@ -109,7 +109,7 @@
 
 	<!-- Copyright -->
 	<div class="footer-copyright text-center py-3">© 2019 Copyright:
-		<a href="#"> CORNOout</a>
+		<a href="index.php"> CORNOout</a>
 	</div>
 	<!-- Copyright -->
 
@@ -119,6 +119,7 @@
 
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
@@ -126,6 +127,6 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
 
-
+<script src="app.js"></script>
 
 </html>

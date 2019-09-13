@@ -158,21 +158,20 @@
 
 								<!--Body-->
 								<div class="modal-body mb-1">
-									
-									<div class="md-form form-sm mb-5">
-										<i class="fas fa-envelope prefix"></i>
-										<input type="email" id="inputLogEmail" name="inputLogEmail" required="" class="form-control form-control-sm validate">
-										<label data-error="wrong" data-success="right" for="inputLogEmail">Seu E-mail</label>
-										</div>
+									<form id="loginUsuario">
+										<div class="md-form form-sm mb-5">
+											<i class="fas fa-envelope prefix"></i>
+											<input type="email" id="LogEmail" name="LogEmail" class="form-control form-control-sm validate" placeholder="Seu e-mail">
+											</div>
 
-									<div class="md-form form-sm mb-4">
-										<i class="fas fa-lock prefix"></i>
-										<input type="password" id="inputLogSenha" name="inputLogSenha" required="" class="form-control form-control-sm validate">
-										<label data-error="wrong" data-success="right" for="inputLogSenha">Sua Senha</label>
-									</div>
-									<div class="text-center mt-2">
-										<button id="btnLogin" name="btnLogin" class="btn btn-info">Entrar<i class="fas fa-sign-in ml-1"></i></button>
-									</div>
+										<div class="md-form form-sm mb-4">
+											<i class="fas fa-lock prefix"></i>
+											<input type="password" id="LogSenha" name="LogSenha" class="form-control form-control-sm validate" placeholder="Sua senha">
+										</div>
+										<div class="text-center mt-2">
+											<button type="submit" id="btnLogin" class="btn btn-info">Entrar<i class="fas fa-sign-in ml-1"></i></button>
+										</div>
+									</form>
 									
 								</div>
 								<!--Footer-->
@@ -191,42 +190,27 @@
 							<div class="tab-pane fade" id="panel8" role="tabpanel">
 
 								<!--Body-->
-								<div>
-									<?php
-										/* MENSAGEM CASO POSSUA ALGUM ERRO NO CADASTRO */
-										if(isset($_SESSION['msg_erro_cadastro'])){
-											echo $_SESSION['msg_erro_cadastro'];
-											unset($_SESSION['msg_erro_cadastro']);
-										}
-									?>
-								</div>
-								<form method="POST" action="cadastrar.php">
+								<form id="cadastrarUsuario">
 									<div class="modal-body">
 										<div class="md-form form-sm mb-5" style="margin-top: -3%">
 											<i class="fas fa-user prefix"></i>
-											<input type="text" id="inputCadNome" name="inputCadNome" class="form-control form-control-sm validate">
-											<label data-error="Erro!" data-success="Ok!" for="inputCadNome">Seu nome</label>
+											<input type="text" id="CadNome" name="CadNome" class="form-control form-control-sm validate" placeholder="Seu nome">
 										</div>
 
 										<div class="md-form form-sm mb-5" style="margin-top: -5%">
 											<i class="fas fa-envelope prefix"></i>
-											<input type="email" id="inputCadEmail" name="inputCadEmail" class="form-control form-control-sm validate">
-											<label data-error="Erro!" data-success="Ok!" for="inputCadEmail">Seu e-mail</label>
+											<input type="email" id="CadEmail" name="CadEmail" class="form-control form-control-sm validate" placeholder="Seu e-mail">
 										</div>
 
 										<div class="md-form form-sm mb-5" style="margin-top: -5%">
 											<i class="fas fa-lock prefix"></i>
-											<input type="password" id="inputCadSenha" name="inputCadSenha" class="form-control form-control-sm validate">
-											<label data-error="Erro!" data-success="Ok!" for="inputCadSenha">Sua Senha</label>
+											<input type="password" id="CadSenha" name="CadSenha" class="form-control form-control-sm validate" placeholder="Sua senha">
 										</div>
 
 										<div class="md-form form-sm mb-4" style="margin-top: -5%">
 											<i class="fas fa-lock prefix"></i>
-											<input type="password" id="inputCadCSenha" name="inputCadCSenha" class="form-control form-control-sm validate">
-											<label data-error="Erro!" data-success="Ok!" for="inputCadCSenha">Confirme a senha</label>
+											<input type="password" id="CadCSenha" name="CadCSenha" class="form-control form-control-sm validate" placeholder="Confirme sua senha">
 										</div>
-
-										<input type="hidden" id="validador" name="validador" value="1">
 
 										<div class="text-center form-sm mt-2" style="margin-top: -5%">
 											<button type="submit" id="btnCadastro" class="btn btn-info">Cadastrar <i class="fas fa-sign-in ml-1"></i></button>
@@ -237,7 +221,7 @@
 								<!--Footer-->
 								<div class="modal-footer">
 									<div class="options text-right">
-										<p class="pt-1">Já Tem conta ? <a href="#" class="blue-text">Entrar</a></p>
+										<p class="pt-1">Já possui conta? <a href="#" class="blue-text">Entrar</a></p>
 									</div>
 									<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cancelar</button>
 								</div>
@@ -253,8 +237,10 @@
 
 		<!-- FIM DO MODAL LOGIN E CADASTRO -->
 
-<script>
-	alertify.alert('Ready!');
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#')
+	}
 </script>
 
 <?php
