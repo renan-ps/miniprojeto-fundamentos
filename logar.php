@@ -20,9 +20,6 @@
 		echo json_encode("ok");
 	}
 
-	
-
-
 	else{
 		echo json_encode("ok");
 	}
