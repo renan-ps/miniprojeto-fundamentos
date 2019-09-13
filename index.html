@@ -356,22 +356,22 @@
 
 								<!--Body-->
 								<div class="modal-body mb-1">
-									<form>
-										<div class="md-form form-sm mb-5">
-											<i class="fas fa-envelope prefix"></i>
-											<input type="email" id="modalLRInput10"  required="" class="form-control form-control-sm validate">
-											<label data-error="wrong" data-success="right" for="modalLRInput10">Seu E-mail</label>
+									
+									<div class="md-form form-sm mb-5">
+										<i class="fas fa-envelope prefix"></i>
+										<input type="email" id="inputLogEmail" name="inputLogEmail" required="" class="form-control form-control-sm validate">
+										<label data-error="wrong" data-success="right" for="inputLogEmail">Seu E-mail</label>
 										</div>
 
-										<div class="md-form form-sm mb-4">
-											<i class="fas fa-lock prefix"></i>
-											<input type="password" id="modalLRInput11" required="" class="form-control form-control-sm validate">
-											<label data-error="wrong" data-success="right" for="modalLRInput11">Sua Senha</label>
-										</div>
-										<div class="text-center mt-2">
-											<button class="btn btn-info">Entrar<i class="fas fa-sign-in ml-1"></i></button>
-										</div>
-									</form>
+									<div class="md-form form-sm mb-4">
+										<i class="fas fa-lock prefix"></i>
+										<input type="password" id="inputLogSenha" name="inputLogSenha" required="" class="form-control form-control-sm validate">
+										<label data-error="wrong" data-success="right" for="inputLogSenha">Sua Senha</label>
+									</div>
+									<div class="text-center mt-2">
+										<button id="btnLogin" name="btnLogin" class="btn btn-info">Entrar<i class="fas fa-sign-in ml-1"></i></button>
+									</div>
+									
 								</div>
 								<!--Footer-->
 								<div class="modal-footer">
@@ -389,29 +389,37 @@
 							<div class="tab-pane fade" id="panel8" role="tabpanel">
 
 								<!--Body-->
-								<div class="modal-body">
-									<div class="md-form form-sm mb-5">
-										<i class="fas fa-envelope prefix"></i>
-										<input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-										<label data-error="wrong" data-success="right" for="modalLRInput12">Seu email</label>
-									</div>
+								<form method="POST" action="cadastrar.php">
+									<div class="modal-body">
+										<div class="md-form form-sm mb-5" style="margin-top: -3%">
+											<i class="fas fa-user prefix"></i>
+											<input type="email" id="inputCadNome" name="inputCadNome" class="form-control form-control-sm validate">
+											<label data-error="wrong" data-success="right" for="inputCadNome">Seu nome</label>
+										</div>
 
-									<div class="md-form form-sm mb-5">
-										<i class="fas fa-lock prefix"></i>
-										<input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-										<label data-error="wrong" data-success="right" for="modalLRInput13">Sua Senha</label>
-									</div>
+										<div class="md-form form-sm mb-5" style="margin-top: -5%">
+											<i class="fas fa-envelope prefix"></i>
+											<input type="email" id="inputCadEmail" name="inputCadEmail" class="form-control form-control-sm validate">
+											<label data-error="wrong" data-success="right" for="inputCadEmail">Seu e-mail</label>
+										</div>
 
-									<div class="md-form form-sm mb-4">
-										<i class="fas fa-lock prefix"></i>
-										<input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-										<label data-error="wrong" data-success="right" for="modalLRInput14">Confirme a senha</label>
-									</div>
+										<div class="md-form form-sm mb-5" style="margin-top: -5%">
+											<i class="fas fa-lock prefix"></i>
+											<input type="password" id="inputCadSenha" name="inputCadSenha" class="form-control form-control-sm validate">
+											<label data-error="wrong" data-success="right" for="inputCadSenha">Sua Senha</label>
+										</div>
 
-									<div class="text-center form-sm mt-2">
-										<button class="btn btn-info">Entrar <i class="fas fa-sign-in ml-1"></i></button>
-									</div>
+										<div class="md-form form-sm mb-4" style="margin-top: -5%">
+											<i class="fas fa-lock prefix"></i>
+											<input type="password" id="inputCadCSenha" name="inputCadCSenha" class="form-control form-control-sm validate">
+											<label data-error="wrong" data-success="right" for="inputCadCSenha">Confirme a senha</label>
+										</div>
 
+										<div class="text-center form-sm mt-2" style="margin-top: -5%">
+											<button type="submit" id="btnCadastro" class="btn btn-info">Cadastrar <i class="fas fa-sign-in ml-1"></i></button>
+										</div>
+
+									</form>
 								</div>
 								<!--Footer-->
 								<div class="modal-footer">
@@ -575,6 +583,4 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
 
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
 </html>
