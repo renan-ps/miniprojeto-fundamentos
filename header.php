@@ -201,18 +201,55 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			
-			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-				<ul class="navbar-nav  justify-content-center">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Passeios</a>
+			<div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+				<ul class="navbar-nav justify-content-start">
+					<li class="nav-item">
+						<a class="nav-link" href="index.php">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Contato</a>
 					</li>
+					<?php
+						if(isset($_SESSION['logado'])){
+					?>
 
+					<li class="nav-item">
+						<a class="nav-link" href="quiz.php">Quiz</a>
+					</li>
+
+					<?php } ?>
+
+				</ul>
+			</div>
+
+					<?php
+						if(!isset($_SESSION['logado'])){
+					?>
+			<div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+				<ul class="navbar-nav">
 					<li class="nav-item">
 						<a class="nav-link" data-toggle="modal" data-target="#modalLRForm">Entre ou Cadastre-se</a>
 					</li>
+					<?php } ?>
 				</ul>
 			</div>
+
+
+			<?php
+				if(isset($_SESSION['logado'])){
+			?>
+			<div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+				<ul class="navbar-nav  ">
+					<li class="nav-item">
+						<p class="nav-link disabled" href="#">Olá, <?php  echo $_SESSION['nome']; ?>.</p>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="logout.php">Sair</a>
+					</li>
+				</ul>
+			</div>
+			<?php
+				}
+			?>
+			
 		</nav>

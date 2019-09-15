@@ -58,7 +58,10 @@ loginUsuario.addEventListener('submit', function(e){
 		if(data === 'erro1'){
 			alertify.error('Preencha todos os campos.');
 		}else{
-			alertify.success('Logado com sucesso.')
+			alertify.success('Logado com sucesso.');
+			setTimeout(function() {
+    		window.location.href = "index.php";
+			}, 1500);
 		}
 		
 	})
